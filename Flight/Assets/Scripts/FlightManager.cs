@@ -14,6 +14,8 @@ public class FlightManager : MonoBehaviour {
 	public JetFlight jetScript;
 	public GameObject jetObj;
 
+	public DBZFlight DBZScript;
+
 	public SupermanFlight superScript;
 	public GameObject superMan;
 
@@ -30,6 +32,7 @@ public class FlightManager : MonoBehaviour {
 	{
 		if(Input.GetKeyDown(jetKey))
 		{
+			DisableDBZ();
 			DisableSuperman();
 			SetJet();
 		}
@@ -37,14 +40,17 @@ public class FlightManager : MonoBehaviour {
 		{
 			DisableJet();
 			DisableSuperman();
+			SetDBZ();
 		}
 		if(Input.GetKeyDown(supermanKey))
 		{
+			DisableDBZ();
 			DisableJet();
 			SetSuperman();
 		}
 		if(Input.GetKeyDown(helicopterKey))
 		{
+			DisableDBZ();
 			DisableJet();
 			DisableSuperman();
 		}
@@ -66,6 +72,21 @@ public class FlightManager : MonoBehaviour {
 		jetScript.enabled = false;
 		jetObj.SetActive(false);
 	}
+
+	void SetDBZ()
+	{
+		DBZScript.enabled = true;
+		transform.eulerAngles = Vector3.zero;
+		Camera.main.transform.position = transform.position;
+		Camera.main.transform.eulerAngles = transform.eulerAngles;
+		rigidbody.velocity = new Vector3(0,0,0);
+	}
+
+	void DisableDBZ()
+	{
+		DBZScript.enabled = false;
+	}
+
 
 	void SetSuperman()
 	{

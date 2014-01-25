@@ -1,10 +1,9 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\FlightManager.cs">
+  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\DBZFlight.cs">
     <Files>
-      <File FileName="Assets\Scripts\SupermanFlight.cs" Line="40" Column="4" />
-      <File FileName="Assets\Scripts\FlightManager.cs" Line="55" Column="40" />
-      <File FileName="Assets\Scripts\JetFlight.cs" Line="36" Column="3" />
+      <File FileName="Assets\Scripts\DBZFlight.cs" Line="94" Column="6" />
+      <File FileName="Assets\Scripts\FlightManager.cs" Line="64" Column="43" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

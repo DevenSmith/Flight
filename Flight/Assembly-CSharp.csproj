@@ -48,6 +48,7 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\DBZFlight.cs" />
      <Compile Include="Assets\Scripts\FlightManager.cs" />
+     <Compile Include="Assets\Scripts\HelicopterFlight.cs" />
      <Compile Include="Assets\Scripts\JetFlight.cs" />
      <Compile Include="Assets\Scripts\SupermanFlight.cs" />
   </ItemGroup>
